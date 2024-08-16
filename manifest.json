@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Swoosh Mailbox Viewer Styler",
+  "version": "1.0",
+  "description": "Some needed changes to the Swoosh mailbox viewer",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.contractbook.com/dev/mailbox/*",
+        "http://*.contractbook.com/dev/mailbox/*",
+        "https://localhost:4000/dev/mailbox/*",
+        "http://localhost:4000/dev/mailbox/*"
+      ],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ]
+}

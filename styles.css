@@ -1,0 +1,16 @@
+body > div > .w-full.flex.flex-col {
+  > :nth-child(1) {
+    order: 1;
+    height: auto;
+  }
+
+  > :nth-child(2) {
+    order: 3;
+    height: 0;
+  }
+
+  > :nth-child(3) {
+    order: 2;
+    height: 50%;
+  }
+}
